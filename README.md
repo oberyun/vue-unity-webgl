@@ -1,4 +1,12 @@
-# vue-unity-webgl
+# @obr-fe/vue-unity-webgl
+
+## About This Fork
+
+**This is a modified version of [vue-unity-webgl](https://github.com/votetake/vue-unity-webgl), maintained to:**
+
+- **Remove hard dependency on `node-sass`**
+- Use Dart Sass for better compatibility
+
 
 Easy to use Unity 5.6 or newer (also Unity 2017 or newer)  WebGL player component for your VueJS application. Embed your Unity application in your application for writing interactive interfaces with two way Unity and VueJS communication.
 
@@ -7,11 +15,11 @@ Easy to use Unity 5.6 or newer (also Unity 2017 or newer)  WebGL player componen
 ## Install
 
 ```Bash
-npm install vue-unity-webgl
+npm install @obr-fe/vue-unity-webgl
 ```
 
 ## Usage
-To get stated import the Unity component from `vue-unity-webgl`. Once imported you can use the Unity component to load in your Unity content. Place the Unity tag along with a src to the json file Unity exported.
+To get stated import the Unity component from `@obr-fe/vue-unity-webgl`. Once imported you can use the Unity component to load in your Unity content. Place the Unity tag along with a src to the json file Unity exported.
 
 ```js
 <template>
@@ -19,7 +27,7 @@ To get stated import the Unity component from `vue-unity-webgl`. Once imported y
 </template>
 
 <script>
-  import Unity from 'vue-unity-webgl'
+  import Unity from '@obr-fe/vue-unity-webgl'
   
   new Vue({
     components: { Unity }
@@ -39,7 +47,7 @@ To get stated import the Unity component from `vue-unity-webgl`. Once imported y
 * `unityLoader` - path to UnityLoader, with this
 
 
-# Communication
+## Communication
 Unity allows you to send Javascript messages to the Unity content. In order to do so using VueJs you have to add a ref to the `<unity>` tag, and call the `message(object, method, param)` method through `this.$refs`.
 
 ```js
@@ -60,7 +68,7 @@ new Vue({
 </script>
 ```
 
-# styling
+## styling
 The player will be injected in the a component with the class `unity-container`. To style to player use the following sass styling. To style the loader you can style the component with the class `unity-loader`. See the example below.
 
 ```scss
@@ -80,7 +88,7 @@ The player will be injected in the a component with the class `unity-container`.
 }
 ```
 
-# html example
+## html example
 ```html
 <!DOCTYPE html>
 <html>

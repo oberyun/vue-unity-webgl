@@ -1,5 +1,5 @@
 {
-  "name": "vue-unity-webgl",
+  "name": "@obr-fe/vue-unity-webgl",
   "version": "1.2.0",
   "description": "Unity WebGL component for VueJs application",
   "main": "src/index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/votetake/vue-unity-webgl.git"
+    "url": "git+https://github.com/oberyun/vue-unity-webgl"
   },
   "keywords": [
     "vue",
@@ -18,16 +18,16 @@
   "author": "votetake",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/votetake/vue-unity-webgl/issues"
+    "url": "https://github.com/oberyun/vue-unity-webgl/issues"
   },
-  "homepage": "https://github.com/votetake/vue-unity-webgl#readme",
+  "homepage": "https://github.com/oberyun/vue-unity-webgl#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "rollup": "^0.50.0",
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
-    "rollup-plugin-vue": "^2.4.2",
+    "rollup-plugin-vue": "^5.1.9",
     "vue": "^2.5.2",
     "vue-template-compiler": "^2.5.2"
   }
